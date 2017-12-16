@@ -4,15 +4,17 @@ import React from 'react';
 import {
   AppRegistry,
   StyleSheet,
+  WebView,
   Text,
   View
 } from 'react-native';
 
 class WeiboHTML5 extends React.Component {
+
   render() {
     return (
       <View style={styles.container}>
-        <Text style={styles.hello}>Hello, React Native</Text>
+      <WebView source={{uri: 'https://m.weibo.cn/beta'}} style={styles.weibo}/>
       </View>
     )
   }
@@ -22,10 +24,9 @@ var styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
   },
-  hello: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
+  weibo: {
+    width:'100%',
+    height:'100%',
   },
 });
 
