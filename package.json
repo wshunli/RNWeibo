@@ -1,0 +1,25 @@
+{
+  "name": "com-wshunli-rnweibo",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "bundle-android": "react-native bundle --platform android --dev false --entry-file index.android.js --bundle-output app/src/main/assets/index.android.bundle --sourcemap-output app/src/main/assets/index.android.map --assets-dest android/app/src/main/res/",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/wshunli/RNWeibo.git"
+  },
+  "author": "wshunli",
+  "license": "Apache License 2.0",
+  "bugs": {
+    "url": "https://github.com/wshunli/RNWeibo/issues"
+  },
+  "homepage": "https://github.com/wshunli/RNWeibo#readme",
+  "dependencies": {
+    "react": "^16.2.0",
+    "react-native": "^0.51.0"
+  }
+}

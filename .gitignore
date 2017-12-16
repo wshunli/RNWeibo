@@ -1,9 +1,32 @@
 *.iml
 .gradle
 /local.properties
-/.idea/workspace.xml
-/.idea/libraries
 .DS_Store
 /build
 /captures
 .externalNativeBuild
+
+.idea/
+
+# React Native files
+/node_modules
+package-lock.json
+
+# .gitignore template from https://github.com/github/gitignore/blob/master/Android.gitignore
+# Built application files
+*.apk
+*.ap_
+
+# Files for the Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
+
+# Gradle build files
+app/build
