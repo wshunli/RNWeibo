@@ -1,6 +1,8 @@
-# RNWeibo
+# react-native-weibo
 
-[![GitHub license](https://img.shields.io/github/license/wshunli/RNWeibo.svg)](https://github.com/wshunli/RNWeibo)
+[![GitHub license](https://img.shields.io/github/license/wshunli/react-native-weibo.svg)](https://github.com/wshunli/react-native-weibo)
+[![David](https://img.shields.io/david/wshunli/react-native-weibo.svg)](https://github.com/wshunli/react-native-weibo)
+[![David](https://img.shields.io/david/dev/wshunli/react-native-weibo.svg)](https://github.com/wshunli/react-native-weibo)
 
 An example of integrating React Native components into Android applications
 
@@ -8,7 +10,7 @@ An example of integrating React Native components into Android applications
 
 ``` bash
 $ npm install
-& npm run bundle-android
+$ npm run bundle-android
 ```
 
 ## License
