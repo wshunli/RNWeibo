@@ -30,3 +30,6 @@ out/
 
 # Gradle build files
 app/build
+
+*.lock
+*.log

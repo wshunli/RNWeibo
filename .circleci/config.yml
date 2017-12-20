@@ -1,0 +1,36 @@
+version: 2
+jobs:
+  build:
+    working_directory: ~/project
+    docker:
+      - image: circleci/node:8
+    steps:
+      - checkout
+      - run: yarn
+      - run: yarn bundle-android
+      - run: yarn run test
+      - persist_to_workspace:
+          root: ~/project
+          paths:
+            - node_modules
+      - store_test_results:
+          path: ~/project/junit.xml
+  android:
+    working_directory: ~/project
+    docker:
+      - image: circleci/android:api-26-node8-alpha
+    steps:
+      - checkout:
+          path: ~/project
+      - attach_workspace:
+          at: ~/project
+      - run: chmod +x gradlew
+      - run: ./gradlew assembleRelease
+workflows:
+  version: 2
+  node-android:
+    jobs:
+      - build
+      - android:
+          requires:
+            - build
